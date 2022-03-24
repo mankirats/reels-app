@@ -16,11 +16,6 @@ function VideoSideBar(props) {
             <span>
                 <FontAwesomeIcon icon={faMessage} size="xl" />
             </span>
-            <span>{/* <FontAwesomeIcon icon={faShare} size="xl" /> */}</span>
-            <span>
-                <FontAwesomeIcon icon="fa-duotone fa-arrow-up-right-from-square" />
-                {/* <FontAwesomeIcon icon={faArrowUpFromSquare} size="xl" /> */}
-            </span>
         </VideoSidebarDiv>
     );
 }
