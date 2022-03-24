@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import { StyledVideoPlayer } from "./Style";
+import { StyledVideoPlayer, VideoPlayerContainer } from "./Style";
+import VideoFooter from "./VideoFooter";
+import VideoSideBar from "./VideoSideBar";
 function VideoPlayer(props) {
     const videoRef = useRef(null);
 
@@ -13,7 +15,7 @@ function VideoPlayer(props) {
     // }, []);
 
     return (
-        <>
+        <VideoPlayerContainer>
             <StyledVideoPlayer
                 onClick={handleVideoPress}
                 src={props.playfile}
@@ -22,7 +24,12 @@ function VideoPlayer(props) {
                 loop
                 ref={videoRef}
             ></StyledVideoPlayer>
-        </>
+            <VideoSideBar></VideoSideBar>
+            <VideoFooter
+                videoUser={props.videoUser}
+                videoDescription={props.videoDescription}
+            ></VideoFooter>
+        </VideoPlayerContainer>
     );
 }
 
