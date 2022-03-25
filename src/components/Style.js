@@ -6,7 +6,7 @@ const ScrollingDiv = styled.div`
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 80vh;
+    height: 85vh;
     width: calc(20vw + 4rem);
 
     @media ${devices.laptop} {
@@ -33,6 +33,7 @@ const StyledVideoPlayer = styled.video`
 `;
 
 const VideoPlayerContainer = styled.div`
+    margin-bottom: 0.5rem;
     position: relative;
     width: 100%;
     height: 100%;
@@ -42,7 +43,7 @@ const VideoFooterDiv = styled.div`
     width: calc(100% - 4.5rem);
     min-height: 5%;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     left: 8px;
     color: white;
     font-weight: 100;
@@ -59,16 +60,43 @@ const VideoUserDiv = styled.div`
 
 const VideoSidebarDiv = styled.div`
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     display: flex;
     color: white;
     flex-direction: column;
     span {
-        padding: 0.5rem 0;
+        padding: 0.3rem 0;
     }
 `;
 
+const HomeBarDiv = styled.div`
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+    align-items: center;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: calc(5vh + 1rem);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 99;
+`;
+
+const AppLogoDiv = styled.div`
+    position: sticky;
+    width: 100%;
+    height: 2rem;
+    font-size: calc(0.8vh + 0.65rem);
+    font-family: cursive;
+    top: 20px;
+    text-align: right;
+    padding: 0 1rem;
+    color: white;
+    z-index: 9;
+`;
 export {
     StyledVideoPlayer,
     ScrollingDiv,
@@ -76,4 +104,6 @@ export {
     VideoPlayerContainer,
     VideoUserDiv,
     VideoSidebarDiv,
+    HomeBarDiv,
+    AppLogoDiv,
 };
