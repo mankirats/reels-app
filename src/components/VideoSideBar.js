@@ -1,20 +1,20 @@
 import React from "react";
 import { VideoSidebarDiv } from "./Style";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faHeart,
-    faMessage,
-    faArrowUpFromSquare,
-} from "@fortawesome/free-regular-svg-icons";
+import { AiOutlineHeart } from "react-icons/ai";
+import { FiShare } from "react-icons/fi";
+import { BiCommentDetail } from "react-icons/bi";
 
 function VideoSideBar(props) {
     return (
         <VideoSidebarDiv>
             <span>
-                <FontAwesomeIcon icon={faHeart} size="xl" />
+                <AiOutlineHeart size={35} />
             </span>
             <span>
-                <FontAwesomeIcon icon={faMessage} size="xl" />
+                <BiCommentDetail size={35} />
+            </span>
+            <span>
+                <FiShare size={35} />
             </span>
         </VideoSidebarDiv>
     );
