@@ -2,6 +2,7 @@ import React from "react";
 import { ScrollingDiv } from "./Style";
 import VideoPlayer from "./VideoPlayer";
 import HomeBar from "./HomeBar";
+
 import vid1 from "./VideoFiles/vid1.mp4";
 import vid2 from "./VideoFiles/vid2.mp4";
 import AppLogo from "./AppLogo";
