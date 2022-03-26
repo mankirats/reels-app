@@ -3,7 +3,7 @@ import { VideoFooterDiv, VideoUserDiv } from "./Style";
 function VideoFooter(props) {
     return (
         <VideoFooterDiv>
-            <VideoUserDiv>{props.videoUser}</VideoUserDiv>
+            <VideoUserDiv>@{props.videoUser}</VideoUserDiv>
             <div>
                 <span>{props.videoDescription}</span>
             </div>

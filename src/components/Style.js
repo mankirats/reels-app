@@ -10,10 +10,10 @@ const ScrollingDiv = styled.div`
     width: calc(20vw + 4rem);
 
     @media ${devices.laptop} {
-        width: calc(32vw + 5rem);
+        width: calc(26vw + 5rem);
     }
     @media ${devices.mobileL} {
-        width: calc(100vw - 1rem);
+        width: calc(100vw - 2rem);
     }
 `;
 
@@ -54,8 +54,9 @@ const VideoFooterDiv = styled.div`
 `;
 
 const VideoUserDiv = styled.div`
-    font-weight: 200;
-    padding: 0.5rem 0;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding: 0.2rem 0;
 `;
 
 const VideoSidebarDiv = styled.div`
