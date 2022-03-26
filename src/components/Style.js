@@ -10,7 +10,7 @@ const ScrollingDiv = styled.div`
     width: calc(20vw + 4rem);
 
     @media ${devices.laptop} {
-        width: calc(25vw + 4rem);
+        width: calc(32vw + 5rem);
     }
     @media ${devices.mobileL} {
         width: calc(100vw - 1rem);
@@ -96,6 +96,20 @@ const AppLogoDiv = styled.div`
     padding: 0 1rem;
     color: white;
     z-index: 9;
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        white,
+        lightgrey
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        white,
+        lightgrey
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `;
 export {
     StyledVideoPlayer,
